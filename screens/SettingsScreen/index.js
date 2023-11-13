@@ -19,60 +19,60 @@ const SettingsScreen = () => {
     });
   };
 
-  return <SafeAreaView style={_styles.iKhjxHGJ}>
-      <View style={_styles.eNuxwyxD}>
+  return <SafeAreaView style={_styles.jSYLIZdu}>
+      <View style={_styles.LjgtjSyf}>
         <Text>Notifications</Text>
         <Switch onValueChange={setIsPushEnabled} value={isPushEnabled} />
       </View>
-      <View style={_styles.FvVzgOML}>
+      <View style={_styles.kwZKBQrX}>
         <Text>Email notifications</Text>
         <Switch onValueChange={setIsEmailEnabled} value={isEmailEnabled} />
       </View>
-      <View style={_styles.KjBUZouu}>
+      <View style={_styles.NWWDcDQL}>
         <Text>SMS notifications</Text>
         <Switch onValueChange={setIsSMSEnabled} value={isSMSEnabled} />
       </View>
       <Button title="Privacy policy" onPress={() => {}} />
-      <Button title="Terms and Conditions" onPress={() => {}} style={_styles.rbmfzMKY} />
-      <Button title="Support/ Send Feedback" onPress={() => {}} style={_styles.JLeoJvrs} />
-      <Button title="Delete account" onPress={() => {}} style={_styles.sAEpRRTj} />
-      <Button title="Log out" onPress={handleLogout} style={_styles.zzascRzW} />
+      <Button title="Terms and Conditions" onPress={() => {}} style={_styles.mbHkBDgt} />
+      <Button title="Support/ Send Feedback" onPress={() => {}} style={_styles.vpCFsnzX} />
+      <Button title="Delete account" onPress={() => {}} style={_styles.TMTaFZLb} />
+      <Button title="Log out" onPress={handleLogout} style={_styles.kpkPpYDY} />
     </SafeAreaView>;
 };
 
 export default SettingsScreen;
 
 const _styles = StyleSheet.create({
-  iKhjxHGJ: {
+  jSYLIZdu: {
     flex: 1,
     justifyContent: "center",
     padding: 20
   },
-  eNuxwyxD: {
+  LjgtjSyf: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginBottom: 20
   },
-  FvVzgOML: {
+  kwZKBQrX: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginBottom: 20
   },
-  KjBUZouu: {
+  NWWDcDQL: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginBottom: 20
   },
-  rbmfzMKY: {
+  mbHkBDgt: {
     marginTop: 20
   },
-  JLeoJvrs: {
+  vpCFsnzX: {
     marginTop: 20
   },
-  sAEpRRTj: {
+  TMTaFZLb: {
     marginTop: 20
   },
-  zzascRzW: {
+  kpkPpYDY: {
     marginTop: 20
   }
 });
