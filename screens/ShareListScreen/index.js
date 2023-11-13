@@ -26,10 +26,10 @@ const ShareScreen = ({
       <Text>{item.description}</Text>
       <Image source={{
       uri: item.image
-    }} style={_styles.mHLRvegY} />
+    }} style={_styles.cxisscxe} />
     </TouchableOpacity>;
 
-  return <SafeAreaView style={_styles.vDfmuEBv}>
+  return <SafeAreaView style={_styles.FFTdViTj}>
       <Text>List to Share</Text>
       <Text>List Title</Text>
       <Text>Description</Text>
@@ -48,11 +48,11 @@ const ShareScreen = ({
 export default ShareScreen;
 
 const _styles = StyleSheet.create({
-  mHLRvegY: {
+  cxisscxe: {
     width: 100,
     height: 100
   },
-  vDfmuEBv: {
+  FFTdViTj: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center"
