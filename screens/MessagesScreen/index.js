@@ -15,19 +15,19 @@ const dummyData = [{
 ];
 
 const ConversationScreen = () => {
-  return <SafeAreaView style={_styles.gUZPnoSu}>
-      <TextInput style={_styles.KNTnvAjh} placeholder="Search" />
+  return <SafeAreaView style={_styles.XOWdMdhz}>
+      <TextInput style={_styles.SCGrfOLI} placeholder="Search" />
       <FlatList data={dummyData} keyExtractor={item => item.id} renderItem={({
       item
-    }) => <View style={_styles.okdFgMGd}>
-            <Image style={_styles.FGhbXrbv} source={{
+    }) => <View style={_styles.hrEWFivf}>
+            <Image style={_styles.JqlLfUvl} source={{
         uri: item.imageUrl
       }} />
-            <View style={_styles.EzxGJxsH}>
-              <Text style={_styles.bkJqFHDR}>{item.name}</Text>
-              <Text style={_styles.vmkqDUDl}>{item.lastMessageTimestamp}</Text>
+            <View style={_styles.tLWePiRe}>
+              <Text style={_styles.ylzVOSvS}>{item.name}</Text>
+              <Text style={_styles.lFlimLwT}>{item.lastMessageTimestamp}</Text>
             </View>
-            <View style={_styles.DvHkCNkj}>
+            <View style={_styles.ITKJkvOk}>
               <Button title="Delete" onPress={() => {}} />
               <Button title="Block" onPress={() => {}} />
               <Button title="Report" onPress={() => {}} />
@@ -39,35 +39,35 @@ const ConversationScreen = () => {
 export default ConversationScreen;
 
 const _styles = StyleSheet.create({
-  gUZPnoSu: {
+  XOWdMdhz: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  KNTnvAjh: {
+  SCGrfOLI: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  okdFgMGd: {
+  hrEWFivf: {
     flexDirection: "row",
     alignItems: "center",
     padding: 10
   },
-  FGhbXrbv: {
+  JqlLfUvl: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  EzxGJxsH: {
+  tLWePiRe: {
     marginLeft: 10
   },
-  bkJqFHDR: {
+  ylzVOSvS: {
     fontSize: 18
   },
-  vmkqDUDl: {
+  lFlimLwT: {
     color: "gray"
   },
-  DvHkCNkj: {
+  ITKJkvOk: {
     marginLeft: "auto"
   }
 });
