@@ -1,10 +1,11 @@
 export const globalOptions = {
-  name: "wagl-43546",
-  url: "https://wagl-43546.botics.co",
-  api: "https://wagl-43546.botics.co/api/v1",
-  screenOptions: {
-    headerShown: false
-  }
+  "name": "wagl-43546",
+  "url": "https://wagl-43546.botics.co",
+  "api": "https://wagl-43546.botics.co/api/v1",
+  "screenOptions": {
+    "headerShown": false
+  },
+  "initialRoute": "login2"
 };
 export const modulesOptions = {
   "@modules/app-menu": {
