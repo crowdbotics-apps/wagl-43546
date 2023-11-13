@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "bdecb39cca7a1ebee2ab8f2db5150576cb471b8fcfade3f771c46f117d187610"
+            "sha256": "e933f4c7593c8fa22df7d6292824c3a5f1d46b20aeb6e6cd5fcce8ffa0d710f2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -63,10 +63,6 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==5.3.2"
-        },
-        "cb-privacy-policy": {
-            "editable": true,
-            "path": "./modules/privacy_policy"
         },
         "cb-terms-and-conditions": {
             "editable": true,
