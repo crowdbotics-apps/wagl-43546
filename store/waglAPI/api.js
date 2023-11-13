@@ -12,6 +12,24 @@ function api_v1_login_create(payload) {
 function api_v1_signup_create(payload) {
   return waglAPI.post(`/api/v1/signup/`, payload)
 }
+function modules_privacy_policy_list(payload) {
+  return waglAPI.get(`/modules/privacy-policy/`)
+}
+function modules_privacy_policy_create(payload) {
+  return waglAPI.post(`/modules/privacy-policy/`, payload)
+}
+function modules_privacy_policy_retrieve(payload) {
+  return waglAPI.get(`/modules/privacy-policy/${payload.id}/`)
+}
+function modules_privacy_policy_update(payload) {
+  return waglAPI.put(`/modules/privacy-policy/${payload.id}/`, payload)
+}
+function modules_privacy_policy_partial_update(payload) {
+  return waglAPI.patch(`/modules/privacy-policy/${payload.id}/`, payload)
+}
+function modules_privacy_policy_destroy(payload) {
+  return waglAPI.delete(`/modules/privacy-policy/${payload.id}/`)
+}
 function modules_terms_and_conditions_list(payload) {
   return waglAPI.get(`/modules/terms-and-conditions/`)
 }
@@ -67,6 +85,12 @@ export const apiService = {
   api_docs_schema_retrieve,
   api_v1_login_create,
   api_v1_signup_create,
+  modules_privacy_policy_list,
+  modules_privacy_policy_create,
+  modules_privacy_policy_retrieve,
+  modules_privacy_policy_update,
+  modules_privacy_policy_partial_update,
+  modules_privacy_policy_destroy,
   modules_terms_and_conditions_list,
   modules_terms_and_conditions_create,
   modules_terms_and_conditions_retrieve,
