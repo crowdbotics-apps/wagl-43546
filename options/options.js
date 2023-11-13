@@ -5,7 +5,7 @@ export const globalOptions = {
   "screenOptions": {
     "headerShown": false
   },
-  "initialRoute": "login2"
+  "initialRoute": "SplashScreen"
 };
 export const modulesOptions = {
   "@modules/app-menu": {
