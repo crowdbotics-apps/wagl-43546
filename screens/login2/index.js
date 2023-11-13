@@ -1,100 +1,96 @@
-import React from "react";
-import { Text, StyleSheet, Dimensions, View, TouchableOpacity } from "react-native";
-const deviceWidth = Dimensions.get("window").width;
+import { StyleSheet } from "react-native";
+import React from 'react';
+import { SafeAreaView, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 
-const pressed = () => {
-  console.log("pressed");
+const LoginScreen = () => {
+  return <SafeAreaView style={_styles.tRYjjZhj}>
+      <Image style={_styles.DYoCtJVY} source={{
+      uri: 'https://tinyurl.com/42evm3m3'
+    }} />
+      <TextInput style={_styles.CUejgCFI} placeholder="Email Address" />
+      <TextInput style={_styles.DdwLqSdh} placeholder="Password" secureTextEntry />
+      <TouchableOpacity style={_styles.LuWdlabr}>
+        <Text style={_styles.oLiPCYJx}>Log in</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Text style={_styles.xHDLjbNm}>Forgot password</Text>
+      </TouchableOpacity>
+      <Text>OR</Text>
+      <Text style={_styles.rYorjPlv}>Sign in via</Text>
+      <TouchableOpacity>
+        <Text style={_styles.adXfXRwt}>Google</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Text style={_styles.IJfayyEC}>Apple</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Text style={_styles.OexMMuvI}>Facebook</Text>
+      </TouchableOpacity>
+      <Text>Don't have an account?</Text>
+      <TouchableOpacity>
+        <Text style={_styles.BQyDEMcd}>Sign up</Text>
+      </TouchableOpacity>
+    </SafeAreaView>;
 };
 
-const LoginScreen = params => {
-  return <View style={styles.container}>
-      <View style={styles.topSection}>
-        <Text style={styles.headingTxt}>Sign In</Text>
-      </View>
-      <View style={styles.bottomSection}>
-        <Text style={styles.bottomSectionText}>Welcome Back!</Text>
-        <Text style={styles.bottomSectionDescription}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor
-        </Text>
-        <Button title={"SignUp"}></Button>
-        <Button title={"Login"} btnStyle={styles.loginBtnStyle} textStyle={styles.loginBtnText} onPress={pressed}></Button>
-      </View>
-    </View>;
-};
+export default LoginScreen;
 
-const styles = StyleSheet.create({
-  container: {
-    margin: 20,
+const _styles = StyleSheet.create({
+  tRYjjZhj: {
     flex: 1,
-    justifyContent: "space-around"
-  },
-  topSection: {
-    flex: 1,
+    justifyContent: "center",
     alignItems: "center"
   },
-  bottomSection: {
-    flex: 1,
-    justifyContent: "center"
+  DYoCtJVY: {
+    width: 100,
+    height: 100,
+    marginBottom: 50
   },
-  bottomSectionText: {
-    alignSelf: "center",
-    fontSize: 24,
-    fontWeight: "bold",
-    padding: 2,
-    marginVertical: 12
+  CUejgCFI: {
+    height: 40,
+    borderColor: "gray",
+    borderWidth: 1,
+    width: "80%",
+    marginBottom: 20
   },
-  bottomSectionDescription: {
-    alignSelf: "center",
-    fontSize: 14,
-    fontWeight: "400",
-    maxWidth: deviceWidth / 1.4,
-    textAlign: "center",
-    padding: 5,
-    marginVertical: 12
+  DdwLqSdh: {
+    height: 40,
+    borderColor: "gray",
+    borderWidth: 1,
+    width: "80%",
+    marginBottom: 20
   },
-  headingTxt: {
-    fontWeight: "bold",
-    color: "black",
-    fontSize: 28
-  },
-  loginBtnStyle: {
-    backgroundColor: "white",
-    borderColor: "black",
-    borderWidth: 1
-  },
-  loginBtnText: {
-    color: "black"
-  }
-});
-
-const Button = ({
-  title,
-  btnStyle,
-  textStyle,
-  onPress
-}) => {
-  return <TouchableOpacity style={[btnStyles.btn, btnStyle]} onPress={onPress}>
-      <Text style={[btnStyles.btnText, textStyle]}>{title}</Text>
-    </TouchableOpacity>;
-};
-
-const btnStyles = StyleSheet.create({
-  btn: {
-    paddingVertical: 10,
-    paddingHorizontal: 30,
-    backgroundColor: "black",
-    borderRadius: 6,
-    alignItems: "center",
-    alignSelf: "center",
+  LuWdlabr: {
+    height: 40,
+    backgroundColor: "blue",
+    width: "80%",
     justifyContent: "center",
-    margin: 5,
-    width: deviceWidth - 80,
-    minHeight: 45,
-    marginVertical: 12
+    alignItems: "center",
+    marginBottom: 20
   },
-  btnText: {
+  oLiPCYJx: {
     color: "white"
+  },
+  xHDLjbNm: {
+    color: "blue",
+    marginBottom: 20
+  },
+  rYorjPlv: {
+    marginVertical: 20
+  },
+  adXfXRwt: {
+    color: "blue",
+    marginBottom: 20
+  },
+  IJfayyEC: {
+    color: "blue",
+    marginBottom: 20
+  },
+  OexMMuvI: {
+    color: "blue",
+    marginBottom: 20
+  },
+  BQyDEMcd: {
+    color: "blue"
   }
 });
-export default LoginScreen;
