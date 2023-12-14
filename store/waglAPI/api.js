@@ -1,68 +1,96 @@
-import axios from "axios"
+import axios from "axios";
 const waglAPI = axios.create({
   baseURL: "https://wagl-43546.botics.co",
-  headers: { Accept: "application/json", "Content-Type": "application/json" }
-})
+  headers: {
+    Accept: "application/json",
+    "Content-Type": "application/json"
+  }
+});
+
 function api_docs_schema_retrieve(payload) {
-  return waglAPI.get(`/api-docs/schema/`, { params: { lang: payload.lang } })
+  return waglAPI.get(`/api-docs/schema/`, {
+    params: {
+      lang: payload.lang
+    }
+  });
 }
+
 function api_v1_login_create(payload) {
-  return waglAPI.post(`/api/v1/login/`, payload)
+  return waglAPI.post(`/api/v1/login/`, payload);
 }
+
 function api_v1_signup_create(payload) {
-  return waglAPI.post(`/api/v1/signup/`, payload)
+  return waglAPI.post(`/api/v1/signup/`, payload);
 }
+
 function modules_terms_and_conditions_list(payload) {
-  return waglAPI.get(`/modules/terms-and-conditions/`)
+  return waglAPI.get(`/modules/terms-and-conditions/`);
 }
+
 function modules_terms_and_conditions_create(payload) {
-  return waglAPI.post(`/modules/terms-and-conditions/`, payload)
+  return waglAPI.post(`/modules/terms-and-conditions/`, payload);
 }
+
 function modules_terms_and_conditions_retrieve(payload) {
-  return waglAPI.get(`/modules/terms-and-conditions/${payload.id}/`)
+  return waglAPI.get(`/modules/terms-and-conditions/${payload.id}/`);
 }
+
 function modules_terms_and_conditions_update(payload) {
-  return waglAPI.put(`/modules/terms-and-conditions/${payload.id}/`, payload)
+  return waglAPI.put(`/modules/terms-and-conditions/${payload.id}/`, payload);
 }
+
 function modules_terms_and_conditions_partial_update(payload) {
-  return waglAPI.patch(`/modules/terms-and-conditions/${payload.id}/`, payload)
+  return waglAPI.patch(`/modules/terms-and-conditions/${payload.id}/`, payload);
 }
+
 function modules_terms_and_conditions_destroy(payload) {
-  return waglAPI.delete(`/modules/terms-and-conditions/${payload.id}/`)
+  return waglAPI.delete(`/modules/terms-and-conditions/${payload.id}/`);
 }
+
 function rest_auth_login_create(payload) {
-  return waglAPI.post(`/rest-auth/login/`, payload)
+  return waglAPI.post(`/rest-auth/login/`, payload);
 }
+
 function rest_auth_logout_retrieve(payload) {
-  return waglAPI.get(`/rest-auth/logout/`)
+  return waglAPI.get(`/rest-auth/logout/`);
 }
+
 function rest_auth_logout_create(payload) {
-  return waglAPI.post(`/rest-auth/logout/`)
+  return waglAPI.post(`/rest-auth/logout/`);
 }
+
 function rest_auth_password_change_create(payload) {
-  return waglAPI.post(`/rest-auth/password/change/`, payload)
+  return waglAPI.post(`/rest-auth/password/change/`, payload);
 }
+
 function rest_auth_password_reset_create(payload) {
-  return waglAPI.post(`/rest-auth/password/reset/`, payload)
+  return waglAPI.post(`/rest-auth/password/reset/`, payload);
 }
+
 function rest_auth_password_reset_confirm_create(payload) {
-  return waglAPI.post(`/rest-auth/password/reset/confirm/`, payload)
+  return waglAPI.post(`/rest-auth/password/reset/confirm/`, payload);
 }
+
 function rest_auth_registration_create(payload) {
-  return waglAPI.post(`/rest-auth/registration/`, payload)
+  return waglAPI.post(`/rest-auth/registration/`, payload);
 }
+
 function rest_auth_registration_verify_email_create(payload) {
-  return waglAPI.post(`/rest-auth/registration/verify-email/`, payload)
+  return waglAPI.post(`/rest-auth/registration/verify-email/`, payload);
 }
+
 function rest_auth_user_retrieve(payload) {
-  return waglAPI.get(`/rest-auth/user/`)
+  return waglAPI.get(`/rest-auth/user/`);
 }
+
 function rest_auth_user_update(payload) {
-  return waglAPI.put(`/rest-auth/user/`, payload)
+  return waglAPI.put(`/rest-auth/user/`, payload);
 }
+
 function rest_auth_user_partial_update(payload) {
-  return waglAPI.patch(`/rest-auth/user/`, payload)
+  return waglAPI.patch(`/rest-auth/user/`, payload);
 }
+
 export const apiService = {
   api_docs_schema_retrieve,
   api_v1_login_create,
@@ -84,4 +112,4 @@ export const apiService = {
   rest_auth_user_retrieve,
   rest_auth_user_update,
   rest_auth_user_partial_update
-}
+};
