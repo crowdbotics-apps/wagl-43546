@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import React from 'react';
 import { SafeAreaView, View, Text, TextInput, Button, StyleSheet, Image } from 'react-native';
 
@@ -9,7 +10,7 @@ const ReportScreen = () => {
       <Text style={styles.title}>Why are you reporting this?</Text>
       <Text style={styles.option}>Spam</Text>
       <Text style={styles.option}>Pornography</Text>
-      <Text style={styles.option}>Hatred and bullying</Text>
+      <Pressable><Text style={styles.option}>Hatred and bullying</Text></Pressable>
       <Text style={styles.option}>Self-harm</Text>
       <Text style={styles.option}>Violent, gory, and harmful content</Text>
       <Text style={styles.option}>Child porn</Text>
